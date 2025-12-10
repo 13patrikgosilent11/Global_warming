@@ -23,6 +23,12 @@
           <li class="main-list__item list-item">
             <a class="list-item__link" href="#skills">Как с этим бороться</a>
           </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#history">Развитие глобального потепления</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#information">Источники информации</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -31,6 +37,15 @@
       <section class="main__home home" id="home">
         <h1 class="home__title">Глобальное потепление</h1>
         <p class="home__subtitle">Глобальное потепление - долгосрочное повышение средней температуры климатической системы Земли, в первую очередь вызванное деятельностью человека</p>
+        <img 
+            class="info-block__img"
+            src="..\static\img\developer.png"
+            alt="me"
+            width="1000"
+            height="1000"
+        >
+
+        
       </section>
       <!-- Секция с рассказом о себе -->
       <section class="main__about about" id="about">
@@ -73,8 +88,8 @@
             class="info-block__img"
             src="..\static\img\1485792004_0_220_5727_3441_650x0_80_0_0_112fa7ff52e3baf3c8adb4a600c05545.jpg"
             alt="me"
-            width="500"
-            height="500"
+            width="700"
+            height="700"
           />
         </div>
       </section>
@@ -93,7 +108,37 @@
           <h3>Уменьшите использование воды</h3>
           <p>Экономное потребление воды снижает потребление энергии, необходимой для ее очистки и подачи. </p>
       </section>
-      
+
+      <section class="main__skills skills" id="history">
+        <h2 class="skills__title">Развитие глобального потепления</h2>
+        <form action="/" method="POST">
+          <h3>Начало(19 век - промышленная революция)</h3>
+          <p>Отправной точкой считается примерно 1850 год. Началось масштабное  сжигание ископаемого топлива (уголь, нефть, газ), что привело к значительному увеличению концентрации парниковых газов (в основном углекислого газа CO₂ и метана) в атмосфере.</p>
+          <h3>Развитие(20 век)</h3>
+          <p>В 1950-1960 годах американский океанолог Чарльз Килинг предоставил неопровержимые доказательства быстрого роста концентрации CO2 в атмосфере.</p>
+          <h3>Создание МГЭИК</h3>
+          <p>В 1988 году была создана Межправительственная группа экспертов по изменению климата (МГЭИК) под эгидой ООН и Всемирной метеорологической организации для оценки научных данных, связанных с изменением климата.</p>
+          <h3>Конец 90-х годов</h3>
+          <p>Научное сообщество достигло широкого консенсуса в том, что наблюдаемое потепление является реальным и вызвано деятельностью человека.</p>
+          <h3>Наше время(21 век)</h3>
+          <p>В 2015 году принято Парижское соглашение, объединившее почти 200 стран обязательствами по удержанию глобального потепления в пределах 2°C (и стремлению к 1,5°C) выше доиндустриального уровня.
+            В 2023 году официально зафиксирован как самый жаркий год в истории наблюдений.
+          </p>
+      </section>
+      <section class="main__skills skills" id="information">
+        <h2 class="skills__title">
+          <input class="skill__button" type="submit" name="button_python" value="Источники информации"></h2>
+       
+        {% if button_python%}
+          <div class="skills__project project" id="project">
+              <a class="project__link" href="https://www.un.org/ru/un75/climate-crisis-race-we-can-win" target="_blank">Открыть</a>
+              <a class="project__link" href="https://www.un.org/ru/climatechange/science/causes-effects-climate-change" target="_blank">Открыть</a>
+                <a class="project__link" href="https://wmo.int/ru/news/media-centre/soglasno-predskazaniyam-globalnogo-klimata-v-blizhayshie-pyat-let-temperatura-ostanetsya-na" target="_blank">Открыть</a>
+                <a class="project__link" href="https://ru.wikipedia.org/wiki/%D0%93%D0%BB%D0%BE%D0%B1%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D0%BF%D0%BE%D1%82%D0%B5%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5" target="_blank">Открыть</a>
+          </div>
+          
+        {% endif %}
+        </section>
     </main>
     <!-- Подвал для ссылок на соц-сети -->
     <footer>
